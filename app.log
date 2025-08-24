@@ -28,3 +28,18 @@
 2025-08-24 11:33:21,787 - INFO - \U0001f4c4 Page 1: +70 comments, 0.47s
 2025-08-24 11:33:21,808 - INFO - \U0001f4be Saved 70 comments into SQLite: ./.cache.db
 2025-08-24 11:33:21,808 - INFO - \u2705 Done. fetched=70 in 0.50s (video_id=26riTPNOJbc)
+2025-08-24 11:45:51,296 - INFO - PyTorch version 2.8.0 available.
+2025-08-24 11:45:51,296 - INFO - TensorFlow version 2.19.0 available.
+2025-08-24 11:45:54,221 - WARNING - From c:\Users\Ігор\AppData\Local\Programs\Python\Python312\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-08-24 11:52:25,036 - WARNING - From c:\Users\Ігор\AppData\Local\Programs\Python\Python312\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-08-24 11:52:25,239 - INFO - PyTorch version 2.4.1 available.
+2025-08-24 11:52:25,239 - INFO - TensorFlow version 2.19.0 available.
+2025-08-24 11:52:26,400 - INFO - \U0001f4e5 Fetch comments for video_id=26riTPNOJbc (order=relevance)
+2025-08-24 11:52:26,402 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-24 11:52:26,954 - INFO - \U0001f4c4 Page 1: +72 comments, 0.55s
+2025-08-24 11:52:26,967 - INFO - \U0001f4be Saved 72 comments into SQLite: ./.cache.db
+2025-08-24 11:52:26,967 - INFO - \u2705 Done. fetched=72 in 0.57s (video_id=26riTPNOJbc)
+2025-08-24 11:52:27,156 - INFO - Use pytorch device_name: cpu
+2025-08-24 11:52:27,156 - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
