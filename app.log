@@ -1,0 +1,30 @@
+2025-08-24 11:09:10,035 - INFO - \U0001f4e5 Fetch comments for video_id=26riTPNOJbc (order=relevance)
+2025-08-24 11:09:10,039 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-24 11:09:10,569 - INFO - \U0001f4c4 Page 1: +67 comments, 0.52s
+2025-08-24 11:09:10,594 - INFO - \U0001f4be Saved 67 comments into SQLite: ./.cache.db
+2025-08-24 11:09:10,595 - INFO - \u2705 Done. fetched=67 in 0.56s (video_id=26riTPNOJbc)
+2025-08-24 11:27:50,043 - INFO - \U0001f4e5 Fetch comments for video_id=26riTPNOJbc (order=relevance)
+2025-08-24 11:27:50,044 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-24 11:27:50,582 - INFO - \U0001f4c4 Page 1: +69 comments, 0.54s
+2025-08-24 11:27:50,602 - INFO - \U0001f4be Saved 69 comments into SQLite: ./.cache.db
+2025-08-24 11:27:50,603 - INFO - \u2705 Done. fetched=69 in 0.56s (video_id=26riTPNOJbc)
+2025-08-24 11:27:50,607 - INFO - \U0001f4cf min_len>=20: 40 \u2192 33
+2025-08-24 11:29:03,796 - INFO - \U0001f4e5 Fetch comments for video_id=26riTPNOJbc (order=relevance)
+2025-08-24 11:29:03,798 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-24 11:29:04,277 - INFO - \U0001f4c4 Page 1: +69 comments, 0.48s
+2025-08-24 11:29:04,289 - INFO - \U0001f4be Saved 69 comments into SQLite: ./.cache.db
+2025-08-24 11:29:04,289 - INFO - \u2705 Done. fetched=69 in 0.49s (video_id=26riTPNOJbc)
+2025-08-24 11:29:04,291 - INFO - \U0001f4cf min_len>=20: 40 \u2192 33
+2025-08-24 11:29:05,139 - INFO - \U0001f310 lang filter ('uk', 'ru', 'en'): 33 \u2192 12
+2025-08-24 11:29:05,140 - INFO - \U0001f9f9 spam filter: 12 \u2192 12
+2025-08-24 11:29:05,141 - INFO - \u267b\ufe0f  dedup: 12 \u2192 12
+2025-08-24 11:31:46,294 - INFO - \U0001f4e5 Fetch comments for video_id=26riTPNOJbc (order=relevance)
+2025-08-24 11:31:46,295 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-24 11:31:46,850 - INFO - \U0001f4c4 Page 1: +69 comments, 0.55s
+2025-08-24 11:31:46,861 - INFO - \U0001f4be Saved 69 comments into SQLite: ./.cache.db
+2025-08-24 11:31:46,861 - INFO - \u2705 Done. fetched=69 in 0.57s (video_id=26riTPNOJbc)
+2025-08-24 11:33:21,310 - INFO - \U0001f4e5 Fetch comments for video_id=26riTPNOJbc (order=relevance)
+2025-08-24 11:33:21,312 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-08-24 11:33:21,787 - INFO - \U0001f4c4 Page 1: +70 comments, 0.47s
+2025-08-24 11:33:21,808 - INFO - \U0001f4be Saved 70 comments into SQLite: ./.cache.db
+2025-08-24 11:33:21,808 - INFO - \u2705 Done. fetched=70 in 0.50s (video_id=26riTPNOJbc)
