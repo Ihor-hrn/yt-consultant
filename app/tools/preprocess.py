@@ -97,7 +97,7 @@ def preprocess_comments_df(
     *,
     text_col: str = "text",
     min_chars: int = 12,  # м'якше для YouTube
-    keep_langs: Tuple[str, ...] = ("uk", "ru", "en", "pl", "cs", "sk"),  # додали сусідні мови
+    keep_langs: Tuple[str, ...] = None,  # None = залишаємо всі мови для LLM
     drop_spam: bool = True,
     deduplicate: bool = True,
     aggressive_stopword_check: bool = False,
@@ -126,14 +126,19 @@ def preprocess_comments_df(
     x = x[mask_len]
     debug["after_minlen"] = len(x)
 
-    # 3) language
+    # 3) language detection (але не фільтруємо - залишаємо всі для LLM)
     x["lang"] = detect_lang_series(x["text_clean"].tolist())
     debug["lang_counts"] = x["lang"].value_counts().to_dict()
-    if keep_langs:
+    if keep_langs is not None:
+        # Якщо явно задано список мов - фільтруємо
         allowed = set(keep_langs) | {"unknown"}
         mask_lang = x["lang"].isin(allowed)
         debug["dropped_reason"]["lang"] = int((~mask_lang).sum())
         x = x[mask_lang]
+    else:
+        # Інакше залишаємо всі мови для LLM
+        debug["dropped_reason"]["lang"] = 0
+        logger.info(f"🌍 Залишено всі мови для LLM аналізу: {dict(x['lang'].value_counts().head(10))}")
     debug["after_lang"] = len(x)
 
     # 4) spam
