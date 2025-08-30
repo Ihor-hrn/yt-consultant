@@ -1,198 +1,97 @@
-2025-08-25 12:23:58,773 - INFO - \U0001f916 Запускаю YouTube Comment Consultant AI-агента...
-2025-08-25 12:23:58,773 - INFO - \U0001f527 Модель агента: google/gemini-2.5-flash
-2025-08-25 12:23:58,773 - INFO - \U0001f527 Модель класифікації: openai/gpt-4o-mini
-2025-08-25 12:23:58,773 - INFO - \u2705 Всі змінні середовища налаштовані
-2025-08-25 12:23:58,773 - INFO - \U0001f511 OpenRouter API: sk-or-v1-5d0cac3a42c...
-2025-08-25 12:23:58,773 - INFO - \U0001f916 Bot token: 7981366461:AAFTIBQfX...
-2025-08-25 12:23:58,934 - INFO - \U0001f5d1\ufe0f Webhook очищено
-2025-08-25 12:23:58,977 - INFO - \U0001f916 Бот @OnlyFansAI111bot (ID: 7981366461) готовий до роботи!
-2025-08-25 12:23:58,977 - INFO - \U0001f4f1 Користувачі можуть надсилати /start для початку
-2025-08-25 12:23:58,977 - INFO - \U0001f3ac Або просто надсилати YouTube посилання для автоматичного аналізу
-2025-08-25 12:23:58,977 - INFO - \U0001f504 Запускаю polling...
-2025-08-25 12:23:58,977 - INFO - Start polling
-2025-08-25 12:23:59,019 - INFO - Run polling for bot @OnlyFansAI111bot id=7981366461 - 'onlyAI'
-2025-08-25 12:24:09,697 - INFO - \U0001f3c1 /start command from user 118337570 (@IH_data_analyst)
-2025-08-25 12:24:09,877 - INFO - Update id=484854501 is handled. Duration 171 ms by bot id=7981366461
-2025-08-25 12:24:24,879 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): https://youtu.be/jCrI-8q3vAg?si=TctCOePUfz_JgIRO...
-2025-08-25 12:24:25,227 - INFO - \U0001f916 Agent processing message from user 118337570: https://youtu.be/jCrI-8q3vAg?si=TctCOePUfz_JgIRO...
-2025-08-25 12:24:25,228 - INFO - \U0001f3ac Detected YouTube video: jCrI-8q3vAg
-2025-08-25 12:24:25,228 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:24:26,550 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:24:26,592 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:24:26,592 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:24:26,592 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:24:26,592 - INFO - \U0001f527 Executing tool: analyze_video with args: {'url_or_id': 'https://youtu.be/jCrI-8q3vAg?si=TctCOePUfz_JkIRO'}
-2025-08-25 12:24:26,592 - INFO - \U0001f4fa Starting video analysis for: https://youtu.be/jCrI-8q3vAg?si=TctCOePUfz_JkIRO...
-2025-08-25 12:24:26,592 - INFO - \U0001f3ac Починаємо аналіз відео: jCrI-8q3vAg (limit=1200, fast_mode=True)
-2025-08-25 12:24:26,592 - INFO - \U0001f50d Перевіряю чи є збережені результати...
-2025-08-25 12:24:26,604 - INFO - \U0001f4ca Знайдено збережені результати для jCrI-8q3vAg
-2025-08-25 12:24:26,604 - INFO - \u2705 Video analysis completed: 127 comments, 5 topics
-2025-08-25 12:24:26,605 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:24:26,975 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:24:28,744 - INFO - \u2705 Agent response generated successfully (1168 chars)
-2025-08-25 12:24:28,744 - INFO - \U0001f4be Saved video_id jCrI-8q3vAg for user 118337570
-2025-08-25 12:24:28,744 - INFO - \U0001f4e4 Sending response to user 118337570 (1168 chars)
-2025-08-25 12:24:28,830 - INFO - Update id=484854502 is handled. Duration 4062 ms by bot id=7981366461
-2025-08-25 12:24:44,710 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): що по негативних коментарях?...
-2025-08-25 12:24:44,710 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:24:45,065 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:24:45,065 - INFO - \U0001f916 Agent processing message from user 118337570: що по негативних коментарях?...
-2025-08-25 12:24:45,065 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:24:45,723 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:24:45,744 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:24:45,745 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:24:45,745 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:24:45,745 - INFO - \U0001f527 Executing tool: get_sentiment_analysis with args: {'video_id': 'jCrI-8q3vAg'}
-2025-08-25 12:24:45,745 - INFO - \U0001f60a\U0001f610\U0001f61f Getting sentiment analysis for video: jCrI-8q3vAg
-2025-08-25 12:24:45,755 - INFO - \u2705 Generated sentiment analysis with 0 sentiment categories
-2025-08-25 12:24:45,755 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:24:46,236 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:24:46,681 - INFO - \u2705 Agent response generated successfully (355 chars)
-2025-08-25 12:24:46,682 - INFO - \U0001f4e4 Sending response to user 118337570 (355 chars)
-2025-08-25 12:24:46,758 - INFO - Update id=484854503 is handled. Duration 2140 ms by bot id=7981366461
-2025-08-25 12:25:19,422 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): може є нейтральні або позитивні коментарі?...
-2025-08-25 12:25:19,423 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:25:19,788 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:25:19,788 - INFO - \U0001f916 Agent processing message from user 118337570: може є нейтральні або позитивні коментарі?...
-2025-08-25 12:25:19,788 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:25:20,514 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:25:20,534 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:25:20,534 - INFO - \U0001f527 Agent requested 2 tool calls
-2025-08-25 12:25:20,534 - INFO - \u2699\ufe0f Executing tool 1/2...
-2025-08-25 12:25:20,534 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'sentiment': 'neutral', 'limit': 5}
-2025-08-25 12:25:20,534 - INFO - \U0001f50d Getting filtered comments for jCrI-8q3vAg (topic=None, sentiment=neutral, limit=5)
-2025-08-25 12:25:20,537 - INFO - \U0001f50d Found 5 filtered comments (topic=None, sentiment=neutral)
-2025-08-25 12:25:20,537 - INFO - \u2705 Found 5 filtered comments
-2025-08-25 12:25:20,537 - INFO - \u2699\ufe0f Executing tool 2/2...
-2025-08-25 12:25:20,537 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'limit': 5, 'sentiment': 'positive'}
-2025-08-25 12:25:20,537 - INFO - \U0001f50d Getting filtered comments for jCrI-8q3vAg (topic=None, sentiment=positive, limit=5)
-2025-08-25 12:25:20,539 - INFO - \U0001f50d Found 0 filtered comments (topic=None, sentiment=positive)
-2025-08-25 12:25:20,539 - INFO - \u2705 Found 0 filtered comments
-2025-08-25 12:25:20,539 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:25:20,934 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:25:22,868 - INFO - \u2705 Agent response generated successfully (1354 chars)
-2025-08-25 12:25:22,868 - INFO - \U0001f4e4 Sending response to user 118337570 (1354 chars)
-2025-08-25 12:25:22,947 - INFO - Update id=484854504 is handled. Duration 3687 ms by bot id=7981366461
-2025-08-25 12:26:06,999 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): щодо коментарів з критикою, негативом є щось?...
-2025-08-25 12:26:06,999 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:26:07,327 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:26:07,327 - INFO - \U0001f916 Agent processing message from user 118337570: щодо коментарів з критикою, негативом є щось?...
-2025-08-25 12:26:07,327 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:26:08,041 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:26:08,048 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:26:08,048 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:26:08,048 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:26:08,048 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'topic_id': 'critique', 'sentiment': 'negative'}
-2025-08-25 12:26:08,048 - INFO - \U0001f50d Getting filtered comments for jCrI-8q3vAg (topic=critique, sentiment=negative, limit=10)
-2025-08-25 12:26:08,050 - INFO - \U0001f50d Found 0 filtered comments (topic=critique, sentiment=negative)
-2025-08-25 12:26:08,050 - INFO - \u2705 Found 0 filtered comments
-2025-08-25 12:26:08,050 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:26:08,474 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:26:08,889 - INFO - \u2705 Agent response generated successfully (229 chars)
-2025-08-25 12:26:08,889 - INFO - \U0001f4e4 Sending response to user 118337570 (229 chars)
-2025-08-25 12:26:09,031 - INFO - Update id=484854505 is handled. Duration 2218 ms by bot id=7981366461
-2025-08-25 12:26:38,350 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): цікаво почитати коментарі з корисними порадами...
-2025-08-25 12:26:38,350 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:26:38,697 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:26:38,697 - INFO - \U0001f916 Agent processing message from user 118337570: цікаво почитати коментарі з корисними порадами...
-2025-08-25 12:26:38,697 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:26:39,801 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:26:39,932 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:26:39,932 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:26:39,932 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:26:39,932 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'topic_id': 'suggestions', 'limit': 5}
-2025-08-25 12:26:39,932 - INFO - \U0001f50d Getting filtered comments for jCrI-8q3vAg (topic=suggestions, sentiment=None, limit=5)
-2025-08-25 12:26:39,935 - INFO - \U0001f50d Found 5 filtered comments (topic=suggestions, sentiment=None)
-2025-08-25 12:26:39,935 - INFO - \u2705 Found 5 filtered comments
-2025-08-25 12:26:39,935 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:26:40,443 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:26:41,391 - INFO - \u2705 Agent response generated successfully (700 chars)
-2025-08-25 12:26:41,391 - INFO - \U0001f4e4 Sending response to user 118337570 (700 chars)
-2025-08-25 12:26:41,475 - INFO - Update id=484854506 is handled. Duration 3202 ms by bot id=7981366461
-2025-08-25 12:27:14,655 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): основні пропозиції від глядачів стосовно майбутніх відео...
-2025-08-25 12:27:14,655 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:27:15,016 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:27:15,016 - INFO - \U0001f916 Agent processing message from user 118337570: основні пропозиції від глядачів стосовно майбутніх відео...
-2025-08-25 12:27:15,016 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:27:15,590 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:27:15,620 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:27:15,620 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:27:15,620 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:27:15,620 - INFO - \U0001f527 Executing tool: get_topic_details with args: {'topic_id': 'suggestions'}
-2025-08-25 12:27:15,621 - INFO - \U0001f4dd Getting topic details for: suggestions (video: jCrI-8q3vAg)
-2025-08-25 12:27:15,623 - INFO - \u2705 Found 3 quotes for topic: Поради/пропозиції
-2025-08-25 12:27:15,623 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:27:16,226 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:27:17,469 - INFO - \u2705 Agent response generated successfully (901 chars)
-2025-08-25 12:27:17,469 - INFO - \U0001f4e4 Sending response to user 118337570 (901 chars)
-2025-08-25 12:27:17,549 - INFO - Update id=484854507 is handled. Duration 3015 ms by bot id=7981366461
-2025-08-25 12:27:51,175 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): що не сподобалось в цьому відео, можливо звук, картинка тощо?...
-2025-08-25 12:27:51,177 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:27:51,534 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:27:51,534 - INFO - \U0001f916 Agent processing message from user 118337570: що не сподобалось в цьому відео, можливо звук, картинка тощо?...
-2025-08-25 12:27:51,534 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:27:52,796 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:27:52,808 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:27:52,808 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:27:52,808 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:27:52,808 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'sentiment': 'negative', 'topic_id': 'av_quality'}
-2025-08-25 12:27:52,808 - INFO - \U0001f50d Getting filtered comments for jCrI-8q3vAg (topic=av_quality, sentiment=negative, limit=10)
-2025-08-25 12:27:52,810 - INFO - \U0001f50d Found 0 filtered comments (topic=av_quality, sentiment=negative)
-2025-08-25 12:27:52,810 - INFO - \u2705 Found 0 filtered comments
-2025-08-25 12:27:52,810 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:27:53,547 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:27:53,820 - INFO - \u2705 Agent response generated successfully (185 chars)
-2025-08-25 12:27:53,820 - INFO - \U0001f4e4 Sending response to user 118337570 (185 chars)
-2025-08-25 12:27:53,882 - INFO - Update id=484854508 is handled. Duration 2797 ms by bot id=7981366461
-2025-08-25 12:28:22,876 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): пропозиції щодо покращення картинки, звуку тощо?...
-2025-08-25 12:28:22,876 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:28:23,235 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:28:23,235 - INFO - \U0001f916 Agent processing message from user 118337570: пропозиції щодо покращення картинки, звуку тощо?...
-2025-08-25 12:28:23,235 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:28:23,883 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:28:23,899 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:28:23,899 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:28:23,899 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:28:23,899 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'sentiment': 'suggestions', 'topic_id': 'av_quality'}
-2025-08-25 12:28:23,899 - INFO - \U0001f50d Getting filtered comments for jCrI-8q3vAg (topic=av_quality, sentiment=suggestions, limit=10)
-2025-08-25 12:28:23,902 - INFO - \U0001f50d Found 0 filtered comments (topic=av_quality, sentiment=suggestions)
-2025-08-25 12:28:23,902 - INFO - \u2705 Found 0 filtered comments
-2025-08-25 12:28:23,902 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:28:24,312 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:28:24,663 - INFO - \u2705 Agent response generated successfully (250 chars)
-2025-08-25 12:28:24,664 - INFO - \U0001f4e4 Sending response to user 118337570 (250 chars)
-2025-08-25 12:28:24,760 - INFO - Update id=484854509 is handled. Duration 1984 ms by bot id=7981366461
-2025-08-25 12:28:45,051 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): найдовший коментар...
-2025-08-25 12:28:45,051 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:28:45,392 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:28:45,393 - INFO - \U0001f916 Agent processing message from user 118337570: найдовший коментар...
-2025-08-25 12:28:45,393 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:28:46,315 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:28:46,881 - INFO - \U0001f3af Agent decided: direct response
-2025-08-25 12:28:46,882 - INFO - \u2705 Agent response generated successfully (347 chars)
-2025-08-25 12:28:46,882 - INFO - \U0001f4e4 Sending response to user 118337570 (347 chars)
-2025-08-25 12:28:47,008 - INFO - Update id=484854510 is handled. Duration 2047 ms by bot id=7981366461
-2025-08-25 12:29:12,302 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): коментарі, які обговорюють наркотики...
-2025-08-25 12:29:12,302 - INFO - \U0001f3ac Використовую контекст відео: jCrI-8q3vAg
-2025-08-25 12:29:12,655 - INFO - \U0001f9e0 Додаю контекст поточного відео: jCrI-8q3vAg
-2025-08-25 12:29:12,655 - INFO - \U0001f916 Agent processing message from user 118337570: коментарі, які обговорюють наркотики...
-2025-08-25 12:29:12,655 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
-2025-08-25 12:29:13,475 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:29:13,499 - INFO - \U0001f3af Agent decided: use tools
-2025-08-25 12:29:13,499 - INFO - \U0001f527 Agent requested 1 tool calls
-2025-08-25 12:29:13,499 - INFO - \u2699\ufe0f Executing tool 1/1...
-2025-08-25 12:29:13,499 - INFO - \U0001f527 Executing tool: search_comments with args: {'question': 'коментарі, які обговорюють наркотики', 'video_id': 'jCrI-8q3vAg'}
-2025-08-25 12:29:13,499 - INFO - \U0001f50d Searching comments for question: коментарі, які обговорюють наркотики... (video: jCrI-8q3vAg)
-2025-08-25 12:29:13,499 - INFO - \U0001f50d Пошук коментарів для питання: коментарі, які обговорюють наркотики...
-2025-08-25 12:29:13,500 - INFO -    Ключові слова: ['коментарі', 'які', 'обговорюють', 'наркотики']
-2025-08-25 12:29:13,502 - INFO -    Знайдено 125 релевантних коментарів
-2025-08-25 12:29:13,503 - INFO - \u2705 Found 5 relevant comments
-2025-08-25 12:29:13,503 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
-2025-08-25 12:29:13,879 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
-2025-08-25 12:29:17,417 - INFO - \u2705 Agent response generated successfully (2832 chars)
-2025-08-25 12:29:17,418 - INFO - \U0001f4e4 Sending response to user 118337570 (2832 chars)
-2025-08-25 12:29:17,536 - INFO - Update id=484854511 is handled. Duration 5296 ms by bot id=7981366461
-2025-08-25 12:29:47,705 - INFO - Polling stopped
-2025-08-25 12:29:47,705 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2025-08-25 12:29:47,706 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7981366461)
-2025-08-25 12:29:47,967 - INFO - Polling stopped for bot @OnlyFansAI111bot id=7981366461 - 'onlyAI'
+2025-08-30 12:49:56,280 - INFO - \U0001f916 Запускаю YouTube Comment Consultant AI-агента...
+2025-08-30 12:49:56,280 - INFO - \U0001f527 Модель агента: google/gemini-2.5-flash
+2025-08-30 12:49:56,280 - INFO - \U0001f527 Модель класифікації: openai/gpt-4o-mini
+2025-08-30 12:49:56,280 - INFO - \u2705 Всі змінні середовища налаштовані
+2025-08-30 12:49:56,280 - INFO - \U0001f511 OpenRouter API: sk-or-v1-5d0cac3a42c...
+2025-08-30 12:49:56,280 - INFO - \U0001f916 Bot token: 7956556751:AAF7df0kQ...
+2025-08-30 12:49:56,428 - INFO - \U0001f5d1\ufe0f Webhook очищено
+2025-08-30 12:49:56,476 - INFO - \U0001f916 Бот @Yorseek_bot (ID: 7956556751) готовий до роботи!
+2025-08-30 12:49:56,476 - INFO - \U0001f4f1 Користувачі можуть надсилати /start для початку
+2025-08-30 12:49:56,476 - INFO - \U0001f3ac Або просто надсилати YouTube посилання для автоматичного аналізу
+2025-08-30 12:49:56,476 - INFO - \U0001f504 Запускаю polling...
+2025-08-30 12:49:56,477 - INFO - Start polling
+2025-08-30 12:49:56,525 - INFO - Run polling for bot @Yorseek_bot id=7956556751 - 'Yorseek'
+2025-08-30 12:50:01,321 - INFO - \U0001f3c1 /start command from user 118337570 (@IH_data_analyst)
+2025-08-30 12:50:01,551 - INFO - Update id=411002142 is handled. Duration 217 ms by bot id=7956556751
+2025-08-30 12:50:14,844 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): https://www.youtube.com/watch?v=X3f3FOiWFD8&t...
+2025-08-30 12:50:15,200 - INFO - \U0001f916 Agent processing message from user 118337570: https://www.youtube.com/watch?v=X3f3FOiWFD8&t...
+2025-08-30 12:50:15,200 - INFO - \U0001f3ac Detected YouTube video: X3f3FOiWFD8
+2025-08-30 12:50:15,201 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
+2025-08-30 12:50:16,510 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:50:16,616 - INFO - \U0001f3af Agent decided: use tools
+2025-08-30 12:50:16,617 - INFO - \U0001f527 Agent requested 1 tool calls
+2025-08-30 12:50:16,617 - INFO - \u2699\ufe0f Executing tool 1/1...
+2025-08-30 12:50:16,617 - INFO - \U0001f527 Executing tool: analyze_video with args: {'url_or_id': 'https://www.youtube.com/watch?v=X3f3FOiWFD8&t'}
+2025-08-30 12:50:16,617 - INFO - \U0001f4fa Starting video analysis for: https://www.youtube.com/watch?v=X3f3FOiWFD8&t...
+2025-08-30 12:50:16,617 - INFO - \U0001f3ac Починаємо аналіз відео: X3f3FOiWFD8 (limit=1200, fast_mode=True)
+2025-08-30 12:50:16,617 - INFO - \U0001f50d Перевіряю чи є збережені результати...
+2025-08-30 12:50:16,628 - INFO - \U0001f4ca Знайдено збережені результати для X3f3FOiWFD8
+2025-08-30 12:50:16,628 - INFO - \u2705 Video analysis completed: 62 comments, 5 topics
+2025-08-30 12:50:16,628 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
+2025-08-30 12:50:16,961 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:50:19,190 - INFO - \u2705 Agent response generated successfully (1449 chars)
+2025-08-30 12:50:19,190 - INFO - \U0001f4be Saved video_id X3f3FOiWFD8 for user 118337570
+2025-08-30 12:50:19,190 - INFO - \U0001f4e4 Sending response to user 118337570 (1449 chars)
+2025-08-30 12:50:19,271 - INFO - Update id=411002143 is handled. Duration 4546 ms by bot id=7956556751
+2025-08-30 12:51:03,815 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): мене цікавлять дані по тональності...
+2025-08-30 12:51:03,815 - INFO - \U0001f3ac Використовую контекст відео: X3f3FOiWFD8
+2025-08-30 12:51:04,173 - INFO - \U0001f9e0 Додаю контекст поточного відео: X3f3FOiWFD8
+2025-08-30 12:51:04,173 - INFO - \U0001f916 Agent processing message from user 118337570: мене цікавлять дані по тональності...
+2025-08-30 12:51:04,173 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
+2025-08-30 12:51:04,828 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:51:04,838 - INFO - \U0001f3af Agent decided: use tools
+2025-08-30 12:51:04,838 - INFO - \U0001f527 Agent requested 1 tool calls
+2025-08-30 12:51:04,839 - INFO - \u2699\ufe0f Executing tool 1/1...
+2025-08-30 12:51:04,839 - INFO - \U0001f527 Executing tool: get_sentiment_analysis with args: {'video_id': 'X3f3FOiWFD8'}
+2025-08-30 12:51:04,839 - INFO - \U0001f60a\U0001f610\U0001f61f Getting sentiment analysis for video: X3f3FOiWFD8
+2025-08-30 12:51:04,850 - INFO - \U0001f50d Found 3 filtered comments (topic=None, sentiment=positive)
+2025-08-30 12:51:04,852 - INFO - \U0001f50d Found 3 filtered comments (topic=None, sentiment=neutral)
+2025-08-30 12:51:04,853 - INFO - \U0001f50d Found 3 filtered comments (topic=None, sentiment=negative)
+2025-08-30 12:51:04,854 - INFO - \u2705 Generated sentiment analysis with 3 sentiment categories
+2025-08-30 12:51:04,854 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
+2025-08-30 12:51:05,275 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:51:06,927 - INFO - \u2705 Agent response generated successfully (1238 chars)
+2025-08-30 12:51:06,927 - INFO - \U0001f4e4 Sending response to user 118337570 (1238 chars)
+2025-08-30 12:51:07,011 - INFO - Update id=411002144 is handled. Duration 3312 ms by bot id=7956556751
+2025-08-30 12:52:14,255 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): хочу побачити аналіз негативних коментарів і з чим вони пов'язані...
+2025-08-30 12:52:14,256 - INFO - \U0001f3ac Використовую контекст відео: X3f3FOiWFD8
+2025-08-30 12:52:14,598 - INFO - \U0001f9e0 Додаю контекст поточного відео: X3f3FOiWFD8
+2025-08-30 12:52:14,598 - INFO - \U0001f916 Agent processing message from user 118337570: хочу побачити аналіз негативних коментарів і з чим вони пов'язані...
+2025-08-30 12:52:14,598 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
+2025-08-30 12:52:15,799 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:52:15,834 - INFO - \U0001f3af Agent decided: use tools
+2025-08-30 12:52:15,834 - INFO - \U0001f527 Agent requested 1 tool calls
+2025-08-30 12:52:15,834 - INFO - \u2699\ufe0f Executing tool 1/1...
+2025-08-30 12:52:15,834 - INFO - \U0001f527 Executing tool: get_sentiment_analysis with args: {'video_id': 'X3f3FOiWFD8'}
+2025-08-30 12:52:15,834 - INFO - \U0001f60a\U0001f610\U0001f61f Getting sentiment analysis for video: X3f3FOiWFD8
+2025-08-30 12:52:15,849 - INFO - \U0001f50d Found 3 filtered comments (topic=None, sentiment=positive)
+2025-08-30 12:52:15,851 - INFO - \U0001f50d Found 3 filtered comments (topic=None, sentiment=neutral)
+2025-08-30 12:52:15,854 - INFO - \U0001f50d Found 3 filtered comments (topic=None, sentiment=negative)
+2025-08-30 12:52:15,854 - INFO - \u2705 Generated sentiment analysis with 3 sentiment categories
+2025-08-30 12:52:15,854 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
+2025-08-30 12:52:16,611 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:52:17,999 - INFO - \u2705 Agent response generated successfully (1156 chars)
+2025-08-30 12:52:17,999 - INFO - \U0001f4e4 Sending response to user 118337570 (1156 chars)
+2025-08-30 12:52:18,077 - INFO - Update id=411002145 is handled. Duration 3891 ms by bot id=7956556751
+2025-08-30 12:53:05,719 - INFO - \U0001f4e8 Processing message from user 118337570 (@IH_data_analyst): цікавлять коментарі з пропозиціями для нових відео...
+2025-08-30 12:53:05,719 - INFO - \U0001f3ac Використовую контекст відео: X3f3FOiWFD8
+2025-08-30 12:53:06,093 - INFO - \U0001f9e0 Додаю контекст поточного відео: X3f3FOiWFD8
+2025-08-30 12:53:06,094 - INFO - \U0001f916 Agent processing message from user 118337570: цікавлять коментарі з пропозиціями для нових відео...
+2025-08-30 12:53:06,094 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for initial processing...
+2025-08-30 12:53:07,054 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:53:07,071 - INFO - \U0001f3af Agent decided: use tools
+2025-08-30 12:53:07,071 - INFO - \U0001f527 Agent requested 1 tool calls
+2025-08-30 12:53:07,071 - INFO - \u2699\ufe0f Executing tool 1/1...
+2025-08-30 12:53:07,071 - INFO - \U0001f527 Executing tool: get_filtered_comments with args: {'topic_id': 'suggestions'}
+2025-08-30 12:53:07,071 - INFO - \U0001f50d Getting filtered comments for X3f3FOiWFD8 (topic=suggestions, sentiment=None, limit=10)
+2025-08-30 12:53:07,075 - INFO - \U0001f50d Found 4 filtered comments (topic=suggestions, sentiment=None)
+2025-08-30 12:53:07,075 - INFO - \u2705 Found 4 filtered comments
+2025-08-30 12:53:07,076 - INFO - \U0001f9e0 Calling google/gemini-2.5-flash for final response generation...
+2025-08-30 12:53:07,584 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 12:53:08,626 - INFO - \u2705 Agent response generated successfully (723 chars)
+2025-08-30 12:53:08,626 - INFO - \U0001f4e4 Sending response to user 118337570 (723 chars)
+2025-08-30 12:53:08,762 - INFO - Update id=411002146 is handled. Duration 3125 ms by bot id=7956556751
+2025-08-30 12:53:47,906 - INFO - Polling stopped
+2025-08-30 12:53:47,907 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-08-30 12:53:47,907 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7956556751)
+2025-08-30 12:53:48,160 - INFO - Polling stopped for bot @Yorseek_bot id=7956556751 - 'Yorseek'

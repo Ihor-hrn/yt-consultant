@@ -275,7 +275,7 @@ def analyze_video_tool(
                 "classified": len(df_classified)
             },
             "topics": topics_with_quotes,
-            "sentiment": saved_data.get("sentiment", []),
+            "sentiment": sentiment_summary.to_dict('records') if sentiment_summary is not None and not sentiment_summary.empty else [],
             "processing_time": processing_time,
             "from_cache": False
         }

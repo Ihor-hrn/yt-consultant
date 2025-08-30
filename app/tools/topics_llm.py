@@ -108,7 +108,12 @@ async def classify_batch_async(
                 # Fallback: можливо JSON-список
                 if content.strip().startswith("["):
                     data = json.loads(content)
-                    mapping = {str(it["id"]): it.get("labels", []) for it in data}
+                    mapping = {
+                        str(it["id"]): {
+                            "labels": it.get("labels", []),
+                            "sentiment": it.get("sentiment", "neutral")
+                        } for it in data
+                    }
                     return mapping
                 else:
                     # Остання спроба — обернути як {"items": ...}
@@ -123,8 +128,8 @@ async def classify_batch_async(
                     
         except Exception as e:
             logger.error(f"API call failed: {e}")
-            # Повертаємо порожні результати для цього батча
-            return {str(item["id"]): [] for item in items}
+            # Повертаємо порожні результати для цього батча з neutral sentiment
+            return {str(item["id"]): {"labels": [], "sentiment": "neutral"} for item in items}
 
 async def process_all_batches(
     df: pd.DataFrame,
@@ -283,12 +288,13 @@ def classify_llm_sync(
             
         except Exception as e:
             logger.error(f"API call failed for batch {i//batch_size + 1}: {e}")
-            # Додаємо порожні результати
+            # Додаємо порожні результати з neutral sentiment
             for _, row in chunk.iterrows():
                 results.append({
                     "comment_id": str(row["comment_id"]),
                     "topic_labels_llm": [],
-                    "topic_top_llm": None
+                    "topic_top_llm": None,
+                    "sentiment": "neutral"
                 })
     
     # Створення DataFrame з результатами
